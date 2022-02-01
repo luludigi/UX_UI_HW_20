@@ -18,22 +18,32 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #FBF7F7;
+  font-size: 12px;
 }
 
 header {
   background-color: #FBF7F7;
   padding: 30px;
   text-align: center;
-  font-size: 35px;
+  font-size: 15px;
   color: white;
 }
 
-/* Create two columns/boxes that floats next to each other */
+/* Create two equal columns that floats next to each other */
+
+.heroImg {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+}
+
 nav {
   float: left;
   width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
   background: #ccc;
   padding: 20px;
 }
@@ -44,55 +54,22 @@ nav ul {
   padding: 0;
 }
 
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /* Style the footer */
 footer {
-  background-color: #777;
+  background-color: #FBF7F7;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   color: white;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.w-layout-grid {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-columns: 1fr;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto auto;
-  grid-template-rows: auto auto;
-  grid-row-gap: 16px;
-  grid-column-gap: 16px;
+  font-size: 10px;
 }
 
 body {
-  font-family: Montserrat, sans-serif;
-  color: #1a1b1f;
-  font-size: 16px;
-  line-height: 28px;
-  font-weight: 400;
+	font-family: Poppin, sans-serif;
+	color: #1a1b1f;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 400;
+	right: auto;
 }
 
 h1 {
@@ -144,23 +121,21 @@ h6 {
 }
 
 p {
+  font-family: Poppin, sans-serif;
   margin-bottom: 10px;
 }
 
 a {
-  display: block;
-  -webkit-transition: opacity 200ms ease;
-  transition: opacity 200ms ease;
-  color: #1a1b1f;
-  text-decoration: underline;
+  color: #0000FF;
+
 }
 
 a:hover {
-  color: #32343a;
+  color: #800080;
 }
 
 a:active {
-  color: #43464d;
+  color: #FF0000;
 }
 
 ul {
@@ -261,8 +236,4 @@ figcaption {
   max-width: 1140px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.styleguide-content-wrap {
-  text-align: center;
 }
