@@ -1,2 +1,2 @@
-# UX_UI_HW_17
-Homework 17
+# uxui-portfolio
+my repo for UX/UI class bootcamp
