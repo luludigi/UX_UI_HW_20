@@ -14,13 +14,15 @@ body {
   font-family: Poppins, sans-serif;
 }
 
- Skills text 
+/* skill text style */
+
 .skill-text {
 	font-size: small;
     margin-right: 8px;	
 }
 
- Project grid layout 
+/* Project grid layout */
+ 
 .grid-container1 {
   display: grid;
   grid-template-columns: 60% 40%;
