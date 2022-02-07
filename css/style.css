@@ -10,12 +10,11 @@
    Start of custom CSS
    ========================================================================== */
 
-/* Media Query to Make Your Design Responsive for Mobile Devices. On screens that are 700px wide or less, go from 1 column to two columns */
-	
+/* Media Query to Make Your Design Responsive for Mobile Devices. On screens that are 700px wide or less, background color will change to purple and width will be 50% */	
 @media screen and (max-width: 700px) {
-	.flex-container {
-    width: 50%;
-	background-color: plum;
+		.flex-container {
+ 	    width: 50%;
+		background-color: plum;
   }
 		.grid-container1 {
 		width: 50%;
@@ -28,13 +27,20 @@
 	}
 }
 
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+/* On screens that are 600px wide or less, make the columns stack on top of each other at 100% width instead of next to each other, the background color will become pink */
 @media screen and (max-width: 600px) {
 		.flex-container {
   		width: 100%;
 		background-color: pink;
+		flex-direction: column;
 		
 	}
+		.flex-container > div {
+	background-color: #FFFFFF;
+	width: 100%;
+	margin: 50px;
+	text-align: left;
+}	
 		.grid-container1 {
 		width: 100%;
 		background-color: pink;
@@ -44,7 +50,12 @@
 		width: 100%;
 		background-color: pink;
 	}
-
+		.column {
+		width: 100%;
+		background-color: pink;
+		flex-direction: column;
+			
+	}
 }
 
 body {
