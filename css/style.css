@@ -13,59 +13,56 @@
    Start of custom CSS
    ========================================================================== */
 
-
 /* Media Query to Make Your Design Responsive for Mobile Devices. On screens that are 700px wide or less, background color will change to purple and width will be 50% */
-
-@media screen and (max-width: 700px) {
-    .flex-container {
-        width: 50%;
-        background-color: plum;
-    }
-    .grid-container1 {
-        width: 50%;
-        background-color: plum;
-    }
-    .grid-container2 {
-        width: 50%;
-        background-color: plum;
-    }
-}
-
-
+        
+        @media screen and (max-width: 700px) {
+            .flex-container {
+                width: 50%;
+                background-color: plum;
+            }
+            .grid-container1 {
+                width: 50%;
+                background-color: plum;
+            }
+            .grid-container2 {
+                width: 50%;
+                background-color: plum;
+            }
+        }
 /* On screens that are 600px wide or less, make the columns stack on top of each other at 100% width instead of next to each other, the background color will become pink */
+        
+        @media screen and (max-width: 600px) {
+            .flex-container {
+                width: 100%;
+                background-color: pink;
+                flex-direction: column;
+            }
+            .flex-container>div {
+                background-color: #FFFFFF;
+                width: 100%;
+                margin: 50px;
+                text-align: left;
+            }
+            .grid-container1 {
+                width: 100%;
+                background-color: pink;
+            }
+            .grid-container2 {
+                width: 100%;
+                background-color: pink;
+            }
+            .column {
+                width: 100%;
+                background-color: pink;
+                flex-direction: column;
+            }
+        }
 
-@media screen and (max-width: 600px) {
-    .flex-container {
-        width: 100%;
-        background-color: pink;
-        flex-direction: column;
-    }
-    .flex-container>div {
-        background-color: #FFFFFF;
-        width: 100%;
-        margin: 50px;
-        text-align: left;
-    }
-    .grid-container1 {
-        width: 100%;
-        background-color: pink;
-    }
-    .grid-container2 {
-        width: 100%;
-        background-color: pink;
-    }
-    .column {
-        width: 100%;
-        background-color: pink;
-        flex-direction: column;
-    }
-}
 
 body {
     margin: 0;
     font-family: Poppins, sans-serif;
 }
-
 
 /* skill text style */
 
@@ -74,98 +71,54 @@ body {
     margin-right: 8px;
 }
 
-
-/* Flexbox layout */
-
-.flex-container {
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: #FFFFFF;
-}
-
-.flex-container>div {
-    background-color: #FFFFFF;
-    width: 50%;
-    margin: 15px;
-    text-align: left;
-}
-
-
+        .smalltext {
+            font-size: small;
+        }
+		
+/* Flexbox layout */        
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: #FFFFFF;
+            flex-direction: row;
+        }
+        
+        .flex-container>div {
+            background-color: #FFFFFF;
+            width: 50%;
+            margin: 50px;
+            text-align: left;
+        }
 /* Project grid layout */
+        
+        .grid-container1 {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            margin-inline: auto;
+            background-color: #FFFFFF;
+            padding: 10px;
+            flex-basis: 100%;
+        }
+        
+        .grid-container2 {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            margin-inline: auto;
+            background-color: #FFFFFF;
+            padding: 10px;
+            flex-basis: 100%;
+        }
+        
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            flex-basis: 100%;
+        }
 
-.grid-container1 {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    background-color: #FFFFFF;
-    padding: 10px;
-}
-
-.grid-container2 {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    background-color: #FFFFFF;
-    padding: 10px;
-}
-
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-
-
-/* Project grid layout */
-
-.grid-container1 {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    background-color: #FFFFFF;
-    padding: 10px;
-}
-
-.grid-container2 {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    background-color: #FFFFFF;
-    padding: 10px;
-}
-
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-
-.project-description-grid {
-    margin-top: 120px;
-    margin-bottom: 120px;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-    grid-template-areas: ". .";
-    -ms-grid-columns: 1fr 30px 2.5fr;
-    grid-template-columns: 1fr 2.5fr;
-    -ms-grid-rows: auto;
-    grid-template-rows: auto;
-}
-
-.w-layout-grid {
-    display: -ms-grid;
-    display: grid;
-    grid-auto-columns: 1fr;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
-    grid-row-gap: 16px;
-    grid-column-gap: 16px;
-}
-
-
-/* Style the header */
+/* Style the menu and header */
 
 .topnav {
     width: auto;
@@ -199,9 +152,9 @@ header p {
 }
 
 .heroImg {
-    background-color: #EBEBEB;
-    padding: 100px 15px;
-    display: flex;
+	background-color: #F7F7F7;
+	padding: 100px 15px;
+	display: flex;
 }
 
 
@@ -212,15 +165,13 @@ header p {
     padding: 30px;
 }
 
+/* Style the list inside the menu */
 nav {
     float: left;
     width: 30%;
     background: #ccc;
     padding: 20px;
 }
-
-
-/* Style the list inside the menu */
 
 nav ul {
     list-style-type: none;

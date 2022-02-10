@@ -5,6 +5,8 @@
 
 <head>
     <title>Emily's homepage</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5R18ETY64X"></script>
     <script>
@@ -35,104 +37,28 @@
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
 
-    <link href="css/style.css" rel="stylesheet" type="text/css">
 
-    <style type="text/css">
-        .smalltext {
-            font-size: small;
-        }
-        /* Flexbox layout */
-        
-        .flex-container {
-            display: flex;
-            flex-wrap: nowrap;
-            background-color: #FFFFFF;
-            flex-direction: row;
-        }
-        
-        .flex-container>div {
-            background-color: #FFFFFF;
-            width: 50%;
-            margin: 50px;
-            text-align: left;
-        }
-        /* Project grid layout */
-        
-        .grid-container1 {
-            display: grid;
-            grid-template-columns: 60% 40%;
-            margin-inline: auto;
-            background-color: #FFFFFF;
-            padding: 10px;
-            flex-basis: 100%;
-        }
-        
-        .grid-container2 {
-            display: grid;
-            grid-template-columns: 40% 60%;
-            margin-inline: auto;
-            background-color: #FFFFFF;
-            padding: 10px;
-            flex-basis: 100%;
-        }
-        
-        .grid-item {
-            background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            font-size: 30px;
-            text-align: center;
-            flex-basis: 100%;
-        }
-        
-        .style2 {
-            font-size: x-small
-        }
-        /* Media Query to Make Your Design Responsive for Mobile Devices. On screens that are 700px wide or less, background color will change to purple and width will be 50% */
-        
-        @media screen and (max-width: 700px) {
-            .flex-container {
-                width: 50%;
-                background-color: plum;
-            }
-            .grid-container1 {
-                width: 50%;
-                background-color: plum;
-            }
-            .grid-container2 {
-                width: 50%;
-                background-color: plum;
-            }
-        }
-        /* On screens that are 600px wide or less, make the columns stack on top of each other at 100% width instead of next to each other, the background color will become pink */
-        
-        @media screen and (max-width: 600px) {
-            .flex-container {
-                width: 100%;
-                background-color: pink;
-                flex-direction: column;
-            }
-            .flex-container>div {
-                background-color: #FFFFFF;
-                width: 100%;
-                margin: 50px;
-                text-align: left;
-            }
-            .grid-container1 {
-                width: 100%;
-                background-color: pink;
-            }
-            .grid-container2 {
-                width: 100%;
-                background-color: pink;
-            }
-            .column {
-                width: 100%;
-                background-color: pink;
-                flex-direction: column;
-            }
-        }
-    </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
 
 </head>
 
