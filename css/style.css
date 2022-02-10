@@ -48,10 +48,14 @@
     }
     .grid-container1 {
         width: 100%;
+		grid-template-columns: 100%;
+
         background-color: pink;
     }
     .grid-container2 {
         width: 100%;
+		grid-template-columns: 100%;
+		
         background-color: pink;
     }
     .column {
