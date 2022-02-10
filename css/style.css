@@ -59,6 +59,7 @@
 }
 
 body {
+  margin: 0;
   font-family: Poppins, sans-serif;
 }
 
@@ -166,16 +167,28 @@ body {
 
 header {
   background-color: #FBF7F7;
-  padding: 30px;
+  padding: 15px;
   text-align: center;
   font-size: 15px;
   color: white;
 }
-
-/* Create two equal columns that floats next to each other */
-.heroImg {
-  display: flex;
+header ul {
+  float: right;
+  color: white;
 }
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+header p {
+  display: inline-block;
+}
+.heroImg {
+  background-color: #EBEBEB;
+  padding: 100px 15px;
+    display: flex;
+}
+/* Create two equal columns that floats next to each other */
 
 .column {
 	flex: 50%;
@@ -203,7 +216,14 @@ footer {
   color: black;
   font-size: 10px;
 }
-
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
 body {
 	font-family: Poppin, sans-serif;
 	color: #1a1b1f;
