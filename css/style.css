@@ -1,134 +1,143 @@
 @charset "utf-8";
+
 /* CSS Document */
+
 
 /* ==========================================================================
    imports: Google Fonts - Poppins, Sans-Serif.
    ========================================================================== */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 /* ==========================================================================
    Start of custom CSS
    ========================================================================== */
 
-/* Media Query to Make Your Design Responsive for Mobile Devices. On screens that are 700px wide or less, background color will change to purple and width will be 50% */	
+
+/* Media Query to Make Your Design Responsive for Mobile Devices. On screens that are 700px wide or less, background color will change to purple and width will be 50% */
+
 @media screen and (max-width: 700px) {
-		.flex-container {
- 	    width: 50%;
-		background-color: plum;
-  }
-		.grid-container1 {
-		width: 50%;
-		background-color: plum;
-	}
-	
-		.grid-container2 {
-		width: 50%;
-		background-color: plum;
-	}
+    .flex-container {
+        width: 50%;
+        background-color: plum;
+    }
+    .grid-container1 {
+        width: 50%;
+        background-color: plum;
+    }
+    .grid-container2 {
+        width: 50%;
+        background-color: plum;
+    }
 }
 
+
 /* On screens that are 600px wide or less, make the columns stack on top of each other at 100% width instead of next to each other, the background color will become pink */
+
 @media screen and (max-width: 600px) {
-		.flex-container {
-  		width: 100%;
-		background-color: pink;
-		flex-direction: column;
-		
-	}
-		.flex-container > div {
-	background-color: #FFFFFF;
-	width: 100%;
-	margin: 50px;
-	text-align: left;
-}	
-		.grid-container1 {
-		width: 100%;
-		background-color: pink;
-	}
-	
-		.grid-container2 {
-		width: 100%;
-		background-color: pink;
-	}
-		.column {
-		width: 100%;
-		background-color: pink;
-		flex-direction: column;
-			
-	}
+    .flex-container {
+        width: 100%;
+        background-color: pink;
+        flex-direction: column;
+    }
+    .flex-container>div {
+        background-color: #FFFFFF;
+        width: 100%;
+        margin: 50px;
+        text-align: left;
+    }
+    .grid-container1 {
+        width: 100%;
+        background-color: pink;
+    }
+    .grid-container2 {
+        width: 100%;
+        background-color: pink;
+    }
+    .column {
+        width: 100%;
+        background-color: pink;
+        flex-direction: column;
+    }
 }
 
 body {
-  margin: 0;
-  font-family: Poppins, sans-serif;
+    margin: 0;
+    font-family: Poppins, sans-serif;
 }
+
 
 /* skill text style */
 
 .skill-text {
-	font-size: small;
-    margin-right: 8px;	
+    font-size: small;
+    margin-right: 8px;
 }
+
 
 /* Flexbox layout */
 
 .flex-container {
-	display: flex;
-	flex-wrap: nowrap;
-	background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #FFFFFF;
 }
 
-.flex-container > div {
-	background-color: #FFFFFF;
-	width: 50%;
-	margin: 15px;
-	text-align: left;
+.flex-container>div {
+    background-color: #FFFFFF;
+    width: 50%;
+    margin: 15px;
+    text-align: left;
 }
 
-/* Project grid layout */
-.grid-container1 {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  background-color: #FFFFFF;
-  padding: 10px;
-}
-.grid-container2 {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  background-color: #FFFFFF;
-  padding: 10px;
-}
-
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
 
 /* Project grid layout */
- 
+
 .grid-container1 {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  background-color: #FFFFFF;
-  padding: 10px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: #FFFFFF;
+    padding: 10px;
 }
 
 .grid-container2 {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  background-color: #FFFFFF;
-  padding: 10px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: #FFFFFF;
+    padding: 10px;
 }
 
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/* Project grid layout */
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
 }
 
 .project-description-grid {
@@ -155,246 +164,260 @@ body {
     grid-column-gap: 16px;
 }
 
+
 /* Style the header */
+
 .topnav {
-  width: auto;
-  overflow: hidden;
-  background-color: ##fff1ee;
-  font-size: normal;
-  text-align: center;
-  underline: none;
+    width: auto;
+    overflow: hidden;
+    background-color: ##fff1ee;
+    font-size: normal;
+    text-align: center;
+    underline: none;
 }
 
 header {
-  background-color: #FBF7F7;
-  padding: 15px;
-  text-align: center;
-  font-size: 15px;
-  color: white;
+    background-color: #FBF7F7;
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
 }
+
 header ul {
-  float: right;
-  color: white;
+    float: right;
+    color: white;
 }
+
 header li {
-  display: inline-block;
-  padding: 0px 5px;
+    display: inline-block;
+    padding: 0px 5px;
 }
+
 header p {
-  display: inline-block;
+    display: inline-block;
 }
+
 .heroImg {
-  background-color: #EBEBEB;
-  padding: 100px 15px;
+    background-color: #EBEBEB;
+    padding: 100px 15px;
     display: flex;
 }
+
+
 /* Create two equal columns that floats next to each other */
 
 .column {
-	flex: 50%;
-	padding: 30px;
+    flex: 50%;
+    padding: 30px;
 }
 
 nav {
-  float: left;
-  width: 30%;
-  background: #ccc;
-  padding: 20px;
+    float: left;
+    width: 30%;
+    background: #ccc;
+    padding: 20px;
 }
+
 
 /* Style the list inside the menu */
+
 nav ul {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
+
 /* Style the body and footer */
+
 footer {
-  background-color: #FBF7F7;
-  padding: 10px;
-  text-align: left;
-  color: black;
-  font-size: 10px;
+    background-color: #FBF7F7;
+    padding: 10px;
+    text-align: left;
+    color: black;
+    font-size: 10px;
 }
+
 footer ul {
-  list-style: none;
-  padding-left: 5px;
+    list-style: none;
+    padding-left: 5px;
 }
+
 footer li {
-  display: inline-block;
-  padding: 0px 7px;
+    display: inline-block;
+    padding: 0px 7px;
 }
+
 body {
-	font-family: Poppin, sans-serif;
-	color: #1a1b1f;
-	font-size: 16px;
-	line-height: 28px;
-	font-weight: 400;
-	right: auto;
+    font-family: Poppin, sans-serif;
+    color: #1a1b1f;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    right: auto;
 }
 
 h1 {
-  margin-top: 20px;
-  margin-bottom: 15px;
-  font-size: 44px;
-  line-height: 62px;
-  font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 44px;
+    line-height: 62px;
+    font-weight: 400;
 }
 
 h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 36px;
-  line-height: 50px;
-  font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 400;
 }
 
 h3 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 30px;
-  line-height: 46px;
-  font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 46px;
+    font-weight: 400;
 }
 
 h4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 24px;
-  line-height: 38px;
-  font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 400;
 }
 
 h5 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  line-height: 34px;
-  font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 500;
 }
 
 h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 16px;
-  line-height: 28px;
-  font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
 }
 
 p {
-  font-family: Poppin, sans-serif;
-  margin-bottom: 10px;
+    font-family: Poppin, sans-serif;
+    margin-bottom: 10px;
 }
 
 a {
-  color: #0000FF;
-
+    color: #0000FF;
 }
 
 a:hover {
-  color: #800080;
+    color: #800080;
 }
 
 a:active {
-  color: #FF0000;
+    color: #FF0000;
 }
 
 ul {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-left: 40px;
-  list-style-type: disc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    list-style-type: disc;
 }
 
 li {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 img {
-  display: block;
+    display: block;
 }
 
 label {
-  margin-bottom: 10px;
-  font-size: 12px;
-  line-height: 20px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 blockquote {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  padding: 15px 30px;
-  border-left: 5px solid #e2e2e2;
-  font-size: 20px;
-  line-height: 34px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px 30px;
+    border-left: 5px solid #e2e2e2;
+    font-size: 20px;
+    line-height: 34px;
 }
 
 figure {
-  margin-top: 25px;
-  padding-bottom: 20px;
+    margin-top: 25px;
+    padding-bottom: 20px;
 }
 
 figcaption {
-  margin-top: 5px;
-  opacity: 0.6;
-  font-size: 14px;
-  line-height: 26px;
-  text-align: center;
+    margin-top: 5px;
+    opacity: 0.6;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
 }
 
 .heading-jumbo-small {
-  margin-top: 10px;
-  margin-bottom: 15px;
-  font-size: 36px;
-  line-height: 50px;
-  font-weight: 400;
-  text-transform: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 400;
+    text-transform: none;
 }
 
 .styleguide-block {
-  display: block;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: left;
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: left;
 }
 
 .heading-jumbo-tiny {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 500;
-  text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 .rich-text {
-  width: 70%;
-  margin-right: auto;
-  margin-bottom: 100px;
-  margin-left: auto;
+    width: 70%;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-left: auto;
 }
 
 .rich-text p {
-  margin-top: 15px;
-  margin-bottom: 25px;
-  opacity: 0.6;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    opacity: 0.6;
 }
 
 .container {
-  width: 100%;
-  max-width: 1140px;
-  margin-right: auto;
-  margin-left: auto;
+    width: 100%;
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
 }
