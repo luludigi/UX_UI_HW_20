@@ -6,7 +6,7 @@
 <head>
     <title>Emily's homepage</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-
+    <link href="css/style-jq.css" rel="stylesheet" type="text/css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5R18ETY64X"></script>
     <script>
@@ -19,46 +19,20 @@
         gtag('config', 'G-5R18ETY64X');
     </script>
 
-    <!-- Hotjar Tracking Code for https://emilylu.us/ -->
-    <script>
-        (function(h, o, t, j, a, r) {
-            h.hj = h.hj || function() {
-                (h.hj.q = h.hj.q || []).push(arguments)
-            };
-            h._hjSettings = {
-                hjid: 2812836,
-                hjsv: 6
-            };
-            a = o.getElementsByTagName('head')[0];
-            r = o.createElement('script');
-            r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-    </script>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script> 
-$(document).ready(function(){
-  $("#flip").click(function(){
-    $("#panel").slideDown("slow");
-  });
-});
-</script>
-<style> 
-#panel, #flip {
-  padding: 5px;
-  text-align: center;
-  background-color: #e5eecc;
-  border: solid 1px #c3c3c3;
-}
-
-#panel {
-  padding: 50px;
-  display: none;
-}
-</style>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+  
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>  
 
 </head>
 
@@ -91,8 +65,93 @@ $(document).ready(function(){
     </strong>Homework 19: jQuery.</div>
         </div>
     </section>
-<div id="flip">My Skills</div>
-<div id="panel">Hello world!</div>
+<!-- Accordion module for My Skills --->
+<h3>My Skills</h3>
+<div id="accordion">
+  <h3>Technology</h3>
+  <div>
+<ul role="list">
+                <li>
+                    Adobe Creative Cloud (Graphic &amp; Web Design)<br> Photoshop, Dreamweaver, InDesign, Illustrator, Premier, Adobe XD.
+                </li>
+                <li>
+                    Content Management System (Website Development/ Managment)<br> Drupal, Joomla, WordPress, Finalsite, SharePoint and Tridion.
+                </li>
+                <li>Figma (UX/UI Design)<br> For developing design prototype.</li>
+                <li>InVision (UX/UI Design)<br> For wireframe design and collaborating.</li>
+                <li>Accessibility (Evaluation and Remediation) <br> WCAG, Section 508, AIRA, WAVE, Adobe Acrobat Pro, PAVE and CommonLook.</li>
+                <li> Assisstive Technology (Testing)<br> Android Accessibility Suite, ChromeVox, Narrator, NVDA and VoiceOver.</li>
+                <li>Collaboration Tools (Project Management) <br> Slack, Trello, Miro, Mural and MS Teams.</li>
+                <li>Marking Tools (Analytics and SEO)<br> GoogleAnalytics, Google Tag Manager, Hotjar, Monsido and Siteimprove.</li>
+                <li>Programming (Coding)<br> HTML, CSS, JavaScript, GitHub, Bootstrap, VS Code, ColdFusion and PHP.</li>
+                <li>Languages (Content Writing)<br> AP Style Wiring. Proficient in Chinese.</li>
+            </ul>
+  </div>
+  <h3>Certfication</h3>
+  <div>
+<ul role="list">
+                <li>
+                    <div>University of Minnesota UX/UI Bootcamp (March 2022)</div>
+                </li>
+                <li>
+                    <div>IAAP CPACC (April 2022)</div>
+                </li>
+                <li>
+                    <div>IAAP WAS (July 2022)</div>
+                </li>
+            </ul>
+            
+            <div><strong>Past</strong></div>
+            <ul role="list">
+                <li>
+                    <div>Certified in Digital Accessibility from WebAIM (Dec 2018)</div>
+                </li>
+                <li>
+                    <div>Certified in Advanced GoogleAnalytics from Google (Nov 2018)</div>
+                </li>
+                <li>
+                    <div>Completed in WordPress: Accessibility from LinkedIn (June 2018)</div>
+                </li>
+                <li>
+                    <div>Completed in Drupal 8 Essential training from LinkedIn (April 2018)</div>
+                </li>
+                <li>
+                    <div>Inclusive Design (Nov 2021)</div>
+                </li>
+                <li>
+                    <div>Mobile Screen Reader Testing (Nov 2021)</div>
+                </li>
+                <li>
+                    <div>ARIA for Developer (Oct 2021)</div>
+                </li>
+                <li>
+                    <div>Accessibility Audit Methodology (Oct 2021)</div>
+                </li>
+                <li>
+                    <div>Accessibility in IT Procurement (Oct 2021)</div>
+                </li>
+            </ul>
+  </div>
+ <div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Project 1</a></li>
+    <li><a href="#tabs-2">Project 2</a></li>
+    <li><a href="#tabs-3">Project 3</a></li>
+  </ul>
+  <div id="tabs-1">
+        <div class="grid-item"><p align="center"><img src="images/Brightside cover.JPG" alt="Brightside cover" width="645" height="260">UX/UI Design</p></div>
+  </div>
+  <div id="tabs-2">
+        <div class="grid-item"><p align="center"><img src="images/web design-mobile.jpg" align="center" alt="Mobile Design" width="241" height="248">Web Design</p></div>
+
+  </div>
+  <div id="tabs-3">
+        <div class="grid-item"><p align="center"><img src="images/accessibility presenter.jpg" alt="Accessibility project" width="615" height="313">Accessibility Project</p></div>
+  </div>
+</div>
+ <hr>
+</div>
+
     <h3>My Skills</h3>
     <div class="flex-container">
         <div class="skill-text">
@@ -170,10 +229,7 @@ $(document).ready(function(){
 
     <div class="grid-container1">
         <div class="grid-item"><img src="images/Brightside cover.JPG" alt="Brightside cover" width="645" height="260"><br> UX/UI Design</div>
-        <div class="grid-item">
-            <p align="center"><img src="images/web design-mobile.jpg" align="center" alt="Mobile Design" width="241" height="248"></p>
-            <p>Web Design</p>
-        </div>
+        <div class="grid-item"><p align="center"><img src="images/web design-mobile.jpg" align="center" alt="Mobile Design" width="241" height="248">Web Design</p></div>
     </div>
 
     <div class="grid-container2">
