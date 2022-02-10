@@ -170,14 +170,14 @@ body {
 .topnav {
     width: auto;
     overflow: hidden;
-    background-color: ##fff1ee;
+    background-color: #fff1ee;
     font-size: normal;
     text-align: center;
     underline: none;
 }
 
 header {
-    background-color: #FBF7F7;
+    background-color: #fff1ee;
     padding: 15px;
     text-align: center;
     font-size: 15px;
@@ -185,8 +185,8 @@ header {
 }
 
 header ul {
-    float: right;
-    color: white;
+    float: center;
+    color: black;
 }
 
 header li {
